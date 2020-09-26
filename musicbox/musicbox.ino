@@ -23,10 +23,15 @@ double durations2[] = {4, 1, 4, 1};
 int melodyLength2 = 4;
 
 int notes3[] = {NOTE_D4, NOTE_A4, NOTE_FS5, NOTE_E5, NOTE_FS5, NOTE_A4, NOTE_FS5, NOTE_A4, 
-NOTE_D4, NOTE_B4, NOTE_G5, NOTE_FS5, NOTE_G5, NOTE_B4, NOTE_G5, NOTE_B4, NOTE_D4, NOTE_B4, NOTE_G5, NOTE_FS5, NOTE_G5, NOTE_B4, NOTE_G5, NOTE_B4};
-double durations3[] = {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+NOTE_D4, NOTE_A4, NOTE_FS5, NOTE_E5, NOTE_FS5, NOTE_A4, NOTE_FS5, NOTE_A4,
+NOTE_D4, NOTE_B4, NOTE_G5, NOTE_FS5, NOTE_G5, NOTE_B4, NOTE_G5, NOTE_B4, 
+NOTE_D4, NOTE_B4, NOTE_G5, NOTE_FS5, NOTE_G5, NOTE_B4, NOTE_G5, NOTE_B4};
+
+const double d = 2.5;
+double durations3[] = {d,d,d,d,d,d,d,d,d,d,d,d,d,d,d,d,
+d,d,d,d,d,d,d,d,d,d,d,d,d,d,d,d,d
 };
-int melodyLength3 = 16;
+int melodyLength3 = 32;
 
 void setup()
 {

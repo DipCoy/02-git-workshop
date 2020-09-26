@@ -2,14 +2,16 @@
 #include "button.h"
 #include "buzzer.h"
 
-#define PIN_BUTTON_MEL_ONE 3
+#define PIN_BUTTON_MEL_ONE 4
 #define PIN_BUTTON_OFF 5
-#define PIN_BUTTON_SPEED 4
+#define PIN_BUTTON_SPEED_UP 3
+#define PIN_BUTTON_SPEED_DOWN 2
 #define PIN_BUZZER 6
 
 Button buttonMelodyOne(PIN_BUTTON_MEL_ONE);
 Button buttonOff(PIN_BUTTON_OFF);
-Button buttonSpeed(PIN_BUTTON_SPEED);
+Button buttonSpeedUp(PIN_BUTTON_SPEED_UP);
+Button buttonSpeedDown(PIN_BUTTON_SPEED_DOWN);
 Buzzer buzzer(PIN_BUZZER);
 
 int notes[] = {NOTE_A4, NOTE_SILENCE, NOTE_G4, NOTE_SILENCE};
@@ -59,7 +61,7 @@ void loop()
         buzzer.turnSoundOn();
     }
 
-    if (buttonSpeed.wasPressed())
+    if (buttonSpeedDown.wasPressed())
     {
         currentSpeed = (currentSpeed + 1)%speedsLength;
         buzzer.setNoteDuration(speeds[currentSpeed]);
